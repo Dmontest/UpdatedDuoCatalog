@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400..700;1,400..700&display=swap');
+@import '@ciscodesignsystems/cds-magnetic-theme-web/css/dist/token-theme-variables.css';
+@import '@ciscodesignsystems/cds-magnetic-blue-theme-web/css/dist/token-theme-variables.css';
+
+/* Component styles */
+@import '@ciscodesignsystems/cds-react-header/index.css';
+@import '@ciscodesignsystems/cds-react-nav/index.css';
+@import '@ciscodesignsystems/cds-react-card/index.css';
+@import '@ciscodesignsystems/cds-react-flex/index.css';
+@import '@ciscodesignsystems/cds-react-footer/index.css';
+@import '@ciscodesignsystems/cds-react-heading/index.css';
+@import '@ciscodesignsystems/cds-react-icons/index.css';
+@import '@ciscodesignsystems/cds-react-line-chart/index.css';
+@import '@ciscodesignsystems/cds-react-tab/index.css';
+@import '@ciscodesignsystems/cds-react-table/index.css';
+@import '@ciscodesignsystems/cds-react-tag/index.css';
+@import '@ciscodesignsystems/cds-react-text/index.css';
+@import '@ciscodesignsystems/cds-react-button/index.css';
+@import '@ciscodesignsystems/cds-react-badge/index.css';
+@import '@ciscodesignsystems/cds-react-divider/index.css';
+@import '@ciscodesignsystems/cds-react-link/index.css';
+@import '@ciscodesignsystems/cds-react-container/index.css';
+@import '@ciscodesignsystems/cds-react-text-input/index.css';
+@import '@ciscodesignsystems/cds-react-search/index.css';
+@import '@ciscodesignsystems/cds-react-pagination/index.css';
+@import '@ciscodesignsystems/cds-react-select/index.css';
+@import '@ciscodesignsystems/cds-react-checkbox/index.css';
+@import '@ciscodesignsystems/cds-react-filter-bar/index.css';
+@import '@ciscodesignsystems/cds-react-menu/index.css';
+@import '@ciscodesignsystems/cds-react-drawer/index.css';
+@import '@ciscodesignsystems/cds-react-stepper/index.css';
+@import '@ciscodesignsystems/cds-react-spinner/index.css';
+@import '@ciscodesignsystems/cds-react-empty-state/index.css';
+@import '@ciscodesignsystems/cds-react-modal/index.css';
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  min-height: 100vh;
+}
+
+[data-cds-theme] {
+  background: var(--base-bg-default);
+  color: var(--base-text-default);
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* CDS drawers render as portals outside the theme scope — give the panel an opaque background */
+[class*="cds-drawer__animation"] {
+  background-color: #ffffff;
+}
+[data-cds-theme="dark"] [class*="cds-drawer__animation"],
+[data-cds-theme="classic-dark"] [class*="cds-drawer__animation"] {
+  background-color: #1a1e21;
+}
